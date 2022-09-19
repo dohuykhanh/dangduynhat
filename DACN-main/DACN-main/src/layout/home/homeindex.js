@@ -4,7 +4,6 @@ import Header from "../../components/Navbar/header";
 import Chat from "../../components/Chatbox/chat"
 import Clock from "../../components/Clock/clock"
 import styles from "./homeindex.module.css"
-import DieuHuong from "../../components/DieuHuong/Dieuhuong"
 function Home({ children }) {
   
   return (

@@ -31,7 +31,6 @@ function ChiNhanh() {
     var a=e
     localStorage.setItem("TenChiNhanh", a)
     console.log("machinhanh", e)
-    localStorage.setItem("Kiemtra", true)
     setisToggled(true);
     navigate(`/TungChiNhanh`);
 

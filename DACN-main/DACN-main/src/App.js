@@ -11,6 +11,7 @@ import Home from './layout/home/homeindex';
 // import Chatclock from './components/chatandclock/chatclock';
 import TungChiNhanh from './features/ChiNhanh/TungChiNhanh'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import VatTu from './features/ChiNhanh/VatTu/VatTu';
 
 function App() {
   return (
@@ -55,6 +56,12 @@ function App() {
           <Route path='/TungChiNhanh' element={
             <Home>
             <TungChiNhanh/>
+            </Home>
+          }>
+          </Route>
+          <Route path='/VatTu' element={
+            <Home>
+            <VatTu/>
             </Home>
           }>
           </Route>

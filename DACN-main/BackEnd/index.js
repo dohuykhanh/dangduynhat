@@ -3,12 +3,13 @@ const app = express();
 const bodyParser = require('body-parser');
 const { connectToDb, db } = require('./db');
 const NhanvienRouters = require('./Routers/NhanvienRouter');
+const VatTuRouter = require("./Routers/VatTuRouter");
 var cors = require('cors');
 app.use(cors());
 app.use(bodyParser.json({ extended: true }));
 app.use(express.json());
 app.use("/Nhanvien", NhanvienRouters);
-
+app.use("/VatTu", VatTuRouter);
 app.get('/', (req, res) => {
     res.json('Hello world')
 })

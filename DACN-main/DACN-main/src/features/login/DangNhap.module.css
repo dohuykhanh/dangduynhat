@@ -32,7 +32,7 @@ form {
     display: flex;
     position: relative;
     align-items: center;
-    background-color: black;
+    background-color: #fff;
     border-radius: 3%;
 }
 

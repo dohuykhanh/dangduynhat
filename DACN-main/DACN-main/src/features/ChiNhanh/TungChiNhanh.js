@@ -1,6 +1,5 @@
 import React,  { useEffect, useState } from 'react';
-import styles from "./chinhnhanh.module.css";
-import { Button, Modal, ModalTitle } from 'react-bootstrap'
+import { Button, Modal } from 'react-bootstrap'
 import axios from "axios";
 
 import DieuHuong from "../../components/DieuHuong/Dieuhuong"
@@ -34,7 +33,6 @@ const TungChiNhanh = () => {
   const [hoten, sethoten] = useState("")
   const [sdt, setsdt] = useState("")
   const [cn, setcn] = useState("")
-  console.log("bien sdt", sdt)
 
   //Id for update record and Delete
   const [id,setId] = useState("");
@@ -166,7 +164,6 @@ const TungChiNhanh = () => {
             Getnhanvien();
         }, [])
   
-  var isToggled = localStorage.getItem("Kiemtra")
   const Hovernut = ()=>{
     setisToggledd(true);
   }

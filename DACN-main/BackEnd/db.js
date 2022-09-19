@@ -12,7 +12,7 @@ async function connectToDb() {
 
     db.TaiKhoan = database.collection("TaiKhoan");
     db.NhanVien = database.collection("NhanVien");
-
+    db.VatTu = database.collection("VatTu");
 
     return 'done.';
 }
